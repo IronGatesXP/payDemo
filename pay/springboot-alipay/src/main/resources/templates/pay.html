@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>首页</title>
+</head>
+<body>
+    <a th:href="@{/alipay(orderNo=2)}">点击生成支付宝二维码</a>
+    <span th:text="${qrPath}">二维码图片地址</span>
+    <img src="D:/qr-2.png"/>
+</body>
+</html>
